@@ -1,0 +1,40 @@
+identity:
+  name: e2b_code_bot
+  author: Jiahua Cui
+  label:
+    en_US: excute code
+    zh_Hans: 执行代码，返回结果
+    pt_BR: excute code
+  icon: icon.png
+description:
+  human:
+    en_US: excute code, return result
+    zh_Hans: 执行给定代码，返回运行结果
+    pt_BR: excute code, return result
+  llm: A tool for excute python code with code interpreter inside sandbox return the result.
+parameters:
+  - name: api_key
+    type: secret-input
+    required: true
+    label:
+      en_US: api key
+      zh_Hans: api key
+      pt_BR: api key
+    human_description:
+      en_US: api key in E2B
+      zh_Hans: 访问 E2B 的 api key
+      pt_BR: api key in E2B
+    form: form
+  - name: code
+    type: string
+    required: true
+    label:
+      en_US: code
+      zh_Hans: 代码内容
+      pt_BR: code
+    human_description:
+      en_US: code to send to E2B
+      zh_Hans: 要执行的代码
+      pt_BR: code to send to E2B
+    llm_description: code that will excute
+    form: form

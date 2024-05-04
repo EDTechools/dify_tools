@@ -1,0 +1,13 @@
+identity:
+  author: Jiahua Cui
+  name: E2B
+  label:
+    en_US: E2B
+    zh_Hans: E2B
+    pt_BR: E2B
+  description:
+    en_US: E2B code robot
+    zh_Hans: E2B机器人
+    pt_BR: E2B code robot
+  icon: icon.png
+credentials_for_provider:
